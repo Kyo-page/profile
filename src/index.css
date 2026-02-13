@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-gradient-to-br from-primary-light/40 via-white to-secondary/20 text-secondary-dark antialiased;
+    @apply dark:bg-[#1a1625] dark:text-gray-100;
+  }
+  .dark body {
+    background: linear-gradient(
+      165deg,
+      rgba(26, 22, 37, 1) 0%,
+      rgba(45, 38, 65, 1) 50%,
+      rgba(35, 28, 52, 1) 100%
+    );
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 8px 32px rgba(135, 114, 192, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  }
+  .dark .glass-panel {
+    background: rgba(40, 35, 60, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  }
+}
