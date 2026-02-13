@@ -4,7 +4,7 @@ const PROFILE = {
     name: "Kyo",
     handle: "Kyo-page",
     intro: "デザイナー / コーダーです。<br>Reactを中心にモダンなWebフロントエンドを学習中。",
-    avatar: null as string | null,
+    avatar: "/profile-pic.jpg",
     links: [
         { label: "GitHub", href: "https://github.com/Kyo-page", icon: "GitHub" },
         { label: "Twitter", href: "https://x.com/kyo__web", icon: "Twitter" },
