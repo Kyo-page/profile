@@ -24,8 +24,8 @@ Vercel で公開する自己紹介サイトを作成します。
 
 ## 使用技術
 
-- HTML/CSS
 - React
+- Tailwind CSS
 - Vercel
 
 ## デザイン
